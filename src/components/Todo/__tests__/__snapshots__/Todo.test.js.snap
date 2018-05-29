@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todo renders a basic todo 1`] = `
+<div
+  className="todo-list-item__container"
+  data-offset-key="foo"
+>
+  <div
+    className="todo-list-item__checkbox"
+    contentEditable={false}
+    suppressContentEditableWarning={true}
+  >
+    <input
+      checked={false}
+      onChange="foo"
+      type="checkbox"
+    />
+  </div>
+  <div
+    className="todo-list-item__text"
+  >
+    <DraftEditorBlock
+      blockProps={
+        Object {
+          "checked": false,
+          "onToggle": "foo",
+        }
+      }
+      offsetKey="foo"
+    />
+  </div>
+</div>
+`;
+
+exports[`Todo renders a checked todo 1`] = `
+<div
+  className="todo-list-item__container is-checked"
+  data-offset-key="foo"
+>
+  <div
+    className="todo-list-item__checkbox"
+    contentEditable={false}
+    suppressContentEditableWarning={true}
+  >
+    <input
+      checked={true}
+      onChange="foo"
+      type="checkbox"
+    />
+  </div>
+  <div
+    className="todo-list-item__text"
+  >
+    <DraftEditorBlock
+      blockProps={
+        Object {
+          "checked": true,
+          "onToggle": "foo",
+        }
+      }
+      offsetKey="foo"
+    />
+  </div>
+</div>
+`;

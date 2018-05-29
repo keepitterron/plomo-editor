@@ -1,0 +1,14 @@
+.todo-list-item {
+  list-style: none;
+  transform: translateX(-1.5em);
+}
+
+.todo-list-item__checkbox {
+    position: absolute;
+    z-index: 1;
+    cursor: default;
+}
+
+.todo-list-item__text {
+  padding-left: 1.5em
+}
